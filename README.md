@@ -4,10 +4,10 @@ Hello and welcome to Chef!
 
 ## Suggestions         
 
-mobile android app 
-Data Bases mySQL
-Recipe database - cookbook
-User data - pantry
+- mobile android app 
+- Data Bases mySQL
+- Recipe database - cookbook
+- User data - pantry
 
                          
 ## Key Features        
