@@ -21,6 +21,8 @@ Hello and welcome to Chef!
 - Timer algorithms for food depreciation
 - Front end work
 - Suggested youtube video plugin
-- 
+
+
+
 
 
