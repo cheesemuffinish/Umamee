@@ -24,5 +24,8 @@ Hello and welcome to Chef!
 
 
 
+## Meetings 
 
+- Wednesday 
+- Sunday
 
