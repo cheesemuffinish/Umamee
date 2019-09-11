@@ -2,15 +2,15 @@
 
 Hello and welcome to Chef!
 
- ##Suggestions         
+## Suggestions         
 
 mobile android app 
 Data Bases mySQL
 Recipe database - cookbook
 User data - pantry
 
-                       ///  
-##Key Features        
+                         
+## Key Features        
 
 
 - User DB
