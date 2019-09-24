@@ -7,7 +7,8 @@ Hello and welcome to Chef!
 - mobile android app 
 - Data Bases mySQL
 - Recipe database - cookbook
-- User data - pantry
+- User data - pantry 
+- User data - grocery list
 
                          
 ## Key Features        
@@ -26,5 +27,7 @@ Hello and welcome to Chef!
 
 ## Meetings 
 
-- Sunday 5:00
+- Wednesday 8:00
+- Sunday 8:00
+
 
