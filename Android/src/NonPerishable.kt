@@ -1,0 +1,3 @@
+class NonPerishable : Food() {
+
+}
