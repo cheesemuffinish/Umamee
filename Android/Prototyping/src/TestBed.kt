@@ -9,7 +9,6 @@ fun main(args: Array<String>) {
 
     testRecipe.shortName = "Brandy Baked Peaches"
 
-
     testPantry.addFood("Peaches",Perishable(),3.0,"Items",LocalDate.parse("2019-12-22"))
     testPantry.addFood("Butter",Perishable(),2.0,"Cups",LocalDate.parse("2019-12-15"))
 
