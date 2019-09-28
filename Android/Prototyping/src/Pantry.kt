@@ -16,10 +16,10 @@ class Pantry {
         pantryList.add(food)
     }
 
-    fun removeFood(food: Food, amount: Float, units: String){
+    fun removeFood(food: Food, amount: Double, units: String){
         if (pantryList.contains(food)){
             var foodIdx = pantryList.indexOf(food)
-            pantryList[foodIdx].decrement(amount, units)
+            pantryList[foodIdx].remove(amount, units)
         }else{
             val shortName = food.shortName
             println("$shortName is not in the Pantry")
