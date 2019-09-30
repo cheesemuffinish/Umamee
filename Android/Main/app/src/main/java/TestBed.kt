@@ -1,8 +1,10 @@
-import java.time.LocalDate
+import java.text.SimpleDateFormat
+import java.util.*
 
 fun main(args: Array<String>) {
 
-    var expirationDate = LocalDate.parse("2019-12-22")
+    //Test creating and adding foods
+    var expirationDate: Date = SimpleDateFormat("dd-mm-yyyy").parse("02-12-2019")
 
     var testRecipe = Recipe()
     var testPantry = Pantry()
@@ -14,17 +16,18 @@ fun main(args: Array<String>) {
 
     testPantry.addFood(testPantryFood)
 
+    //Test creating recipe
     testRecipe.uniqueName = "Brandy Baked Peaches"
 
     var peaches = Perishable()
     peaches.uniqueName = "Peaches"
     peaches.add(3.0, "Items")
-    peaches.expirationDate = LocalDate.parse("2019-12-22")
+    peaches.expirationDate = SimpleDateFormat("dd-mm-yyyy").parse("22-12-2019")
 
     var butter = Perishable()
     butter.uniqueName = "Butter"
     butter.add(2.0,"cups")
-    butter.expirationDate = LocalDate.parse("2019-12-15")
+    butter.expirationDate = SimpleDateFormat("dd-mm-yyyy").parse("15-12-2019")
 
     testPantry.addFood(peaches)
 
@@ -45,6 +48,7 @@ fun main(args: Array<String>) {
     testRecipe.addStep("Preheat oven to 350 degrees F (175 degrees C). Prepare a baking dish with cooking spray.")
     testRecipe.addStep("Arrange peaches cut-side up in the prepared baking dish.")
 
+    //Test removing ingredients
     println("\nBefore Remove")
     testRecipe.printIngredients()
     println("\nAfter Remove")
@@ -52,6 +56,7 @@ fun main(args: Array<String>) {
     var step: String = testRecipe.instructions.toString()
     println(step)
 
+    //Test Unit Conversions
     val testFood = Food()
     testFood.uniqueName = "PickledNanners"
     testFood.add(4.0,"cups")
@@ -62,7 +67,13 @@ fun main(args: Array<String>) {
     testFood.remove(4.0, "cups")
     println(testFood.amount)
 
+    //Test Save and Load
     testPantry.save("Test.json")
+    testPantry.load("Test.json")
+    testPantry.pantryList2.forEach{println(it)}
 
+    println(testPantry.getFood("PickledNanners"))
+    testPantry.addFood(testFood)
+    println(testPantry.getFood("PickledNanners"))
 
 }

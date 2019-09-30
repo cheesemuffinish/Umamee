@@ -1,10 +1,10 @@
-import java.time.LocalDate
+import java.util.Date
 
 
 open class Food {
 
     var uniqueName: String ?= null
-    var expirationDate: LocalDate ?= null
+    var expirationDate: Date ?= null
     var amount: Double ?= null
     var units: String ?= null
 
@@ -27,15 +27,14 @@ open class Food {
             this.units = unitsGiven
             this.amount = amount
         }else{
-            val amountAdd: Double ?= this?.convertUnits(amount, unitsGiven, this.units!! ) ?:0.0
+            val amountAdd: Double ?= this.convertUnits(amount, unitsGiven, this.units!! )?: 0.0
             this.amount = this.amount!! + amountAdd!!
         }
-
     }
 
     fun remove(amount: Double, unitsGiven: String){
 
-        val amountDec =  this?.convertUnits(amount, unitsGiven, this.units!!) ?:0.0
+        val amountDec =  this.convertUnits(amount, unitsGiven, this.units!!) ?:0.0
 
         if (this.amount == null){
             println("This food has not been initialized.")
@@ -55,7 +54,7 @@ open class Food {
                 val idxD: Int = massConversionNames.indexOf(unitsDesired)
                 return amountIn.times(massConversionValues[idxD] / (massConversionValues[idxG]))
             }else{
-                println("The units given are incompatible with ${this.units}")
+                println("Sorry you gave me ${unitsGiven} which is incompatible with ${this.units}.\nNothing was added")
             }
 
         }else if(volumeConversionNames.contains(unitsGiven)){

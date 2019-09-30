@@ -1,12 +1,15 @@
 import org.json.JSONObject
 import java.io.File
-import java.time.LocalDate
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
 
 
 
 class Pantry {
 
     var pantryList = mutableMapOf<String, Food>()
+    var pantryList2 = mutableMapOf<String, Food>()
 
     // member functions
     fun addFood(pantryFood: Food){
@@ -44,12 +47,17 @@ class Pantry {
 
     fun save(filename: String){
 
-        val saveHolder = JSONObject(this.pantryList as Map<*, *>)
-        File(filename).writeText(saveHolder.toString())
+        val gson = GsonBuilder().setPrettyPrinting().create()
+        val jsonPantry: String = gson.toJson(this.pantryList)
+        File(filename).writeText(jsonPantry)
+
     }
 
-    fun load(){
+    fun load(filename: String){
 
+        val jsonPantry: String = File(filename).readText()
+        val gson = GsonBuilder().setPrettyPrinting().create()
+        this.pantryList2 = gson.fromJson(jsonPantry, object : TypeToken<Map<String, Food>>() {}.type)
     }
 
 }

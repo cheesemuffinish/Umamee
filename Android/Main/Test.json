@@ -1,0 +1,82 @@
+{
+  "TestFood": {
+    "uniqueName": "TestFood",
+    "expirationDate": "Jan 2, 2019 12:12:00 AM",
+    "amount": 10.5,
+    "units": "pounds",
+    "massConversionNames": [
+      "grams",
+      "kilograms",
+      "ounces",
+      "pounds"
+    ],
+    "massConversionValues": [
+      1000.0,
+      1.0,
+      35.274,
+      2.20462
+    ],
+    "volumeConversionNames": [
+      "teaspoons",
+      "tablespoons",
+      "fluid ounces",
+      "cups",
+      "pints",
+      "quarts",
+      "gallons",
+      "milliliters",
+      "liters"
+    ],
+    "volumeConversionValues": [
+      48.0,
+      16.0,
+      8.0,
+      1.0,
+      0.5,
+      0.25,
+      0.0625,
+      236.588,
+      0.236588
+    ]
+  },
+  "Peaches": {
+    "uniqueName": "Peaches",
+    "expirationDate": "Jan 22, 2019 12:12:00 AM",
+    "amount": 3.0,
+    "units": "Items",
+    "massConversionNames": [
+      "grams",
+      "kilograms",
+      "ounces",
+      "pounds"
+    ],
+    "massConversionValues": [
+      1000.0,
+      1.0,
+      35.274,
+      2.20462
+    ],
+    "volumeConversionNames": [
+      "teaspoons",
+      "tablespoons",
+      "fluid ounces",
+      "cups",
+      "pints",
+      "quarts",
+      "gallons",
+      "milliliters",
+      "liters"
+    ],
+    "volumeConversionValues": [
+      48.0,
+      16.0,
+      8.0,
+      1.0,
+      0.5,
+      0.25,
+      0.0625,
+      236.588,
+      0.236588
+    ]
+  }
+}
