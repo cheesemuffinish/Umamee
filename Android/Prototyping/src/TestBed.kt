@@ -31,4 +31,17 @@ fun main(args: Array<String>) {
     testRecipe.printIngredients()
     var step: String = testRecipe.instructions.toString()
     println(step)
+
+    val testFood = Food()
+    testFood.shortName = "PickledNanners"
+    testFood.add(4.0,"cups")
+    println(testFood.amount)
+    testFood.add(3.0, "pounds")
+    testFood.remove(200.0, "milliliters")
+    println(testFood.amount)
+    testFood.remove(4.0, "cups")
+    println(testFood.amount)
+
+
+
 }
