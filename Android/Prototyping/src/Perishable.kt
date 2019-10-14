@@ -1,3 +1,0 @@
-class Perishable : Food(){
-
-}
