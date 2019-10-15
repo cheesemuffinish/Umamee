@@ -22,6 +22,7 @@ Hello and welcome to Chef!
 - Timer algorithms for food depreciation
 - Front end work
 - Suggested youtube video plugin
+- Assigning recipes to your Google/Outlook/iOS calendar or perhaps an Umamee calendar (assist with meal planning) (include notifications each day and notify of recipe to be made)
 
 
 
