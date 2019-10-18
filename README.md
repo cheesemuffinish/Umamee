@@ -4,7 +4,7 @@ Hello and welcome Chef!
 
 ## Git Usage
 
-This section describes how branches should be used for Penelope development.
+This section describes how branches should be used for Umamee development.
 
 ### Main Branches
 
