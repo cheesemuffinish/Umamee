@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		803AABBE23555BE5006A0A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABBD23555BE5006A0A3C /* AppDelegate.swift */; };
+		803AABC023555BE5006A0A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABBF23555BE5006A0A3C /* SceneDelegate.swift */; };
+		803AABC223555BE5006A0A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABC123555BE5006A0A3C /* ViewController.swift */; };
+		803AABC523555BE5006A0A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803AABC323555BE5006A0A3C /* Main.storyboard */; };
+		803AABC723555BE7006A0A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803AABC623555BE7006A0A3C /* Assets.xcassets */; };
+		803AABCA23555BE7006A0A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803AABC823555BE7006A0A3C /* LaunchScreen.storyboard */; };
+		803AABD223555CD0006A0A3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 803AABD123555CD0006A0A3C /* GoogleService-Info.plist */; };
+		9D7CA04C194F60555984AD71 /* Pods_Umamee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2955971BD09F3602B00C30A3 /* Pods-Umamee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umamee.debug.xcconfig"; path = "Target Support Files/Pods-Umamee/Pods-Umamee.debug.xcconfig"; sourceTree = "<group>"; };
+		803AABBA23555BE5006A0A3C /* Umamee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Umamee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803AABBD23555BE5006A0A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		803AABBF23555BE5006A0A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		803AABC123555BE5006A0A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		803AABC423555BE5006A0A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		803AABC623555BE7006A0A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		803AABC923555BE7006A0A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		803AABCB23555BE7006A0A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803AABD123555CD0006A0A3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Umamee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D81E711DF0B2B8C23345FD /* Pods-Umamee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umamee.release.xcconfig"; path = "Target Support Files/Pods-Umamee/Pods-Umamee.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803AABB723555BE5006A0A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7CA04C194F60555984AD71 /* Pods_Umamee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		803AABB123555BE5006A0A3C = {
+			isa = PBXGroup;
+			children = (
+				803AABBC23555BE5006A0A3C /* Umamee */,
+				803AABBB23555BE5006A0A3C /* Products */,
+				BC1858E46F5412DA2A5A50B0 /* Pods */,
+				FFA68FB87E292A78C3D60708 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		803AABBB23555BE5006A0A3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803AABBA23555BE5006A0A3C /* Umamee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803AABBC23555BE5006A0A3C /* Umamee */ = {
+			isa = PBXGroup;
+			children = (
+				803AABBD23555BE5006A0A3C /* AppDelegate.swift */,
+				803AABBF23555BE5006A0A3C /* SceneDelegate.swift */,
+				803AABC123555BE5006A0A3C /* ViewController.swift */,
+				803AABC323555BE5006A0A3C /* Main.storyboard */,
+				803AABC623555BE7006A0A3C /* Assets.xcassets */,
+				803AABC823555BE7006A0A3C /* LaunchScreen.storyboard */,
+				803AABCB23555BE7006A0A3C /* Info.plist */,
+				803AABD123555CD0006A0A3C /* GoogleService-Info.plist */,
+			);
+			path = Umamee;
+			sourceTree = "<group>";
+		};
+		BC1858E46F5412DA2A5A50B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2955971BD09F3602B00C30A3 /* Pods-Umamee.debug.xcconfig */,
+				E9D81E711DF0B2B8C23345FD /* Pods-Umamee.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFA68FB87E292A78C3D60708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803AABB923555BE5006A0A3C /* Umamee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803AABCE23555BE7006A0A3C /* Build configuration list for PBXNativeTarget "Umamee" */;
+			buildPhases = (
+				2A4FB8A092C8C049D48CE9F7 /* [CP] Check Pods Manifest.lock */,
+				803AABB623555BE5006A0A3C /* Sources */,
+				803AABB723555BE5006A0A3C /* Frameworks */,
+				803AABB823555BE5006A0A3C /* Resources */,
+				42C692F887BECB3E90897372 /* [CP] Embed Pods Frameworks */,
+				74F2A886EDCD1C6A0E9206E6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Umamee;
+			productName = Umamee;
+			productReference = 803AABBA23555BE5006A0A3C /* Umamee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803AABB223555BE5006A0A3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Derek Thompson";
+				TargetAttributes = {
+					803AABB923555BE5006A0A3C = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 803AABB523555BE5006A0A3C /* Build configuration list for PBXProject "Umamee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 803AABB123555BE5006A0A3C;
+			productRefGroup = 803AABBB23555BE5006A0A3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803AABB923555BE5006A0A3C /* Umamee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803AABB823555BE5006A0A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803AABCA23555BE7006A0A3C /* LaunchScreen.storyboard in Resources */,
+				803AABD223555CD0006A0A3C /* GoogleService-Info.plist in Resources */,
+				803AABC723555BE7006A0A3C /* Assets.xcassets in Resources */,
+				803AABC523555BE5006A0A3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A4FB8A092C8C049D48CE9F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Umamee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42C692F887BECB3E90897372 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Umamee/Pods-Umamee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Umamee/Pods-Umamee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Umamee/Pods-Umamee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74F2A886EDCD1C6A0E9206E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Umamee/Pods-Umamee-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Umamee/Pods-Umamee-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Umamee/Pods-Umamee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803AABB623555BE5006A0A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803AABC223555BE5006A0A3C /* ViewController.swift in Sources */,
+				803AABBE23555BE5006A0A3C /* AppDelegate.swift in Sources */,
+				803AABC023555BE5006A0A3C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		803AABC323555BE5006A0A3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803AABC423555BE5006A0A3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		803AABC823555BE7006A0A3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803AABC923555BE7006A0A3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		803AABCC23555BE7006A0A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		803AABCD23555BE7006A0A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803AABCF23555BE7006A0A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2955971BD09F3602B00C30A3 /* Pods-Umamee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Umamee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DerekThompson.Umamee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		803AABD023555BE7006A0A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D81E711DF0B2B8C23345FD /* Pods-Umamee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Umamee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DerekThompson.Umamee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803AABB523555BE5006A0A3C /* Build configuration list for PBXProject "Umamee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803AABCC23555BE7006A0A3C /* Debug */,
+				803AABCD23555BE7006A0A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803AABCE23555BE7006A0A3C /* Build configuration list for PBXNativeTarget "Umamee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803AABCF23555BE7006A0A3C /* Debug */,
+				803AABD023555BE7006A0A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 803AABB223555BE5006A0A3C /* Project object */;
+}
