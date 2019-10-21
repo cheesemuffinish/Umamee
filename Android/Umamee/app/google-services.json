@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "195223180214",
+    "firebase_url": "https://umamee-9c6fe.firebaseio.com",
+    "project_id": "umamee-9c6fe",
+    "storage_bucket": "umamee-9c6fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195223180214:android:cda88a6e6a2f2ef146e717",
+        "android_client_info": {
+          "package_name": "com.example.umamee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195223180214-9r74evovstff6afusor695ru7q4qlsac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.umamee",
+            "certificate_hash": "a0302cc02b207dd0c902cab8a89a36f8cf451c14"
+          }
+        },
+        {
+          "client_id": "195223180214-qmctjm7p45tg3993h35rcs22qjle2h6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAup_qjuIyzaW5HF3OXCAcpm-NbJNKayzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195223180214-qmctjm7p45tg3993h35rcs22qjle2h6n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "195223180214-ho8tbk3e3s3art8nmuj1q1ubhrfu9k5a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DerekThompson.Umamee"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
