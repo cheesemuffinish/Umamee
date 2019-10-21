@@ -20,8 +20,6 @@ import kotlin.math.sign
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
-    private lateinit var sign_out: Button
-    private lateinit var _context: Context
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +34,7 @@ class HomeFragment : Fragment() {
             textView.text = it
         })
 
+        //find the button in the fragment then set the onclick listener
         val signout: Button = root.findViewById(R.id.sign_out)
         signout.setOnClickListener{
             if (container?.context != null) {
