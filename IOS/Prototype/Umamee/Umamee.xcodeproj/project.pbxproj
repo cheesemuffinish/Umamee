@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		803AABC723555BE7006A0A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803AABC623555BE7006A0A3C /* Assets.xcassets */; };
 		803AABCA23555BE7006A0A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803AABC823555BE7006A0A3C /* LaunchScreen.storyboard */; };
 		803AABD223555CD0006A0A3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 803AABD123555CD0006A0A3C /* GoogleService-Info.plist */; };
+		803AABD4236F6971006A0A3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABD3236F6971006A0A3C /* SignUpViewController.swift */; };
+		803AABD6236F6992006A0A3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABD5236F6992006A0A3C /* LoginViewController.swift */; };
+		803AABD8236F69B8006A0A3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABD7236F69B8006A0A3C /* HomeViewController.swift */; };
+		803AABDB236F7CA6006A0A3C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABDA236F7CA6006A0A3C /* Utilities.swift */; };
+		803AABDE236F9971006A0A3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABDD236F9971006A0A3C /* Constants.swift */; };
 		9D7CA04C194F60555984AD71 /* Pods_Umamee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,11 @@
 		803AABC923555BE7006A0A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		803AABCB23555BE7006A0A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		803AABD123555CD0006A0A3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		803AABD3236F6971006A0A3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		803AABD5236F6992006A0A3C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		803AABD7236F69B8006A0A3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		803AABDA236F7CA6006A0A3C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		803AABDD236F9971006A0A3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Umamee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D81E711DF0B2B8C23345FD /* Pods-Umamee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umamee.release.xcconfig"; path = "Target Support Files/Pods-Umamee/Pods-Umamee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +77,8 @@
 			children = (
 				803AABBD23555BE5006A0A3C /* AppDelegate.swift */,
 				803AABBF23555BE5006A0A3C /* SceneDelegate.swift */,
-				803AABC123555BE5006A0A3C /* ViewController.swift */,
+				803AABDC236F7CB1006A0A3C /* Helpers */,
+				803AABD9236F69CB006A0A3C /* View Controllers */,
 				803AABC323555BE5006A0A3C /* Main.storyboard */,
 				803AABC623555BE7006A0A3C /* Assets.xcassets */,
 				803AABC823555BE7006A0A3C /* LaunchScreen.storyboard */,
@@ -77,13 +88,32 @@
 			path = Umamee;
 			sourceTree = "<group>";
 		};
+		803AABD9236F69CB006A0A3C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				803AABD3236F6971006A0A3C /* SignUpViewController.swift */,
+				803AABD5236F6992006A0A3C /* LoginViewController.swift */,
+				803AABD7236F69B8006A0A3C /* HomeViewController.swift */,
+				803AABC123555BE5006A0A3C /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		803AABDC236F7CB1006A0A3C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				803AABDA236F7CA6006A0A3C /* Utilities.swift */,
+				803AABDD236F9971006A0A3C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BC1858E46F5412DA2A5A50B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2955971BD09F3602B00C30A3 /* Pods-Umamee.debug.xcconfig */,
 				E9D81E711DF0B2B8C23345FD /* Pods-Umamee.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -231,7 +261,12 @@
 			files = (
 				803AABC223555BE5006A0A3C /* ViewController.swift in Sources */,
 				803AABBE23555BE5006A0A3C /* AppDelegate.swift in Sources */,
+				803AABDB236F7CA6006A0A3C /* Utilities.swift in Sources */,
+				803AABD4236F6971006A0A3C /* SignUpViewController.swift in Sources */,
+				803AABD6236F6992006A0A3C /* LoginViewController.swift in Sources */,
 				803AABC023555BE5006A0A3C /* SceneDelegate.swift in Sources */,
+				803AABD8236F69B8006A0A3C /* HomeViewController.swift in Sources */,
+				803AABDE236F9971006A0A3C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
