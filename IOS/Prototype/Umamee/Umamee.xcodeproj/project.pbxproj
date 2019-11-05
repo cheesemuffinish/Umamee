@@ -19,6 +19,8 @@
 		803AABD8236F69B8006A0A3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABD7236F69B8006A0A3C /* HomeViewController.swift */; };
 		803AABDB236F7CA6006A0A3C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABDA236F7CA6006A0A3C /* Utilities.swift */; };
 		803AABDE236F9971006A0A3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABDD236F9971006A0A3C /* Constants.swift */; };
+		803AABE223712C21006A0A3C /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABE123712C21006A0A3C /* GroceryListViewController.swift */; };
+		803AABE423712C4B006A0A3C /* MyCookbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AABE323712C4B006A0A3C /* MyCookbookViewController.swift */; };
 		9D7CA04C194F60555984AD71 /* Pods_Umamee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		803AABD7236F69B8006A0A3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		803AABDA236F7CA6006A0A3C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		803AABDD236F9971006A0A3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		803AABE123712C21006A0A3C /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
+		803AABE323712C4B006A0A3C /* MyCookbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCookbookViewController.swift; sourceTree = "<group>"; };
 		CE6C61EB4B6042FBA3BD39F6 /* Pods_Umamee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Umamee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D81E711DF0B2B8C23345FD /* Pods-Umamee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umamee.release.xcconfig"; path = "Target Support Files/Pods-Umamee/Pods-Umamee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,10 +95,12 @@
 		803AABD9236F69CB006A0A3C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				803AABC123555BE5006A0A3C /* ViewController.swift */,
 				803AABD3236F6971006A0A3C /* SignUpViewController.swift */,
 				803AABD5236F6992006A0A3C /* LoginViewController.swift */,
 				803AABD7236F69B8006A0A3C /* HomeViewController.swift */,
-				803AABC123555BE5006A0A3C /* ViewController.swift */,
+				803AABE323712C4B006A0A3C /* MyCookbookViewController.swift */,
+				803AABE123712C21006A0A3C /* GroceryListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803AABE223712C21006A0A3C /* GroceryListViewController.swift in Sources */,
+				803AABE423712C4B006A0A3C /* MyCookbookViewController.swift in Sources */,
 				803AABC223555BE5006A0A3C /* ViewController.swift in Sources */,
 				803AABBE23555BE5006A0A3C /* AppDelegate.swift in Sources */,
 				803AABDB236F7CA6006A0A3C /* Utilities.swift in Sources */,

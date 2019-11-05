@@ -13,7 +13,9 @@ struct Constants {
     struct Storyboard {
         // Contains all constants within Storyboard
         static let homeViewController = "HomeVC"
-        
-        
+        static let myCookbookViewController = "CookbookVC"
+        static let groceryListViewController = "GroceryVC"
+    
     }
+
 }

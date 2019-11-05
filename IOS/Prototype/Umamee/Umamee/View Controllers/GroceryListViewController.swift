@@ -1,24 +1,20 @@
 //
-//  HomeViewController.swift
+//  GroceryListViewController.swift
 //  Umamee
 //
-//  Created by Derek Thompson on 11/3/19.
+//  Created by Derek Thompson on 11/4/19.
 //  Copyright © 2019 Derek Thompson. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class GroceryListViewController: UIViewController {
 
     @IBOutlet weak var browseRecipes: UIButton!
     
     @IBOutlet weak var myCookbook: UIButton!
     
     @IBOutlet weak var groceryList: UIButton!
-    
-    
-    
-    
     
     
     
@@ -39,9 +35,11 @@ class HomeViewController: UIViewController {
     }
     */
     
+    
     @IBAction func browseRecipesTapped(_ sender: Any) {
         self.transitiontoHome()
     }
+    
     
     @IBAction func myCookbookTapped(_ sender: Any) {
         self.transitiontoCookbook()

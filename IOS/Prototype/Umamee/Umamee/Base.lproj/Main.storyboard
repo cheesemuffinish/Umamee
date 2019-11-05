@@ -123,6 +123,76 @@
             </objects>
             <point key="canvasLocation" x="1937" y="427"/>
         </scene>
+        <!--Grocery List View Controller-->
+        <scene sceneID="qE9-1V-XoC">
+            <objects>
+                <viewController storyboardIdentifier="GroceryVC" id="Tta-Ad-yHY" customClass="GroceryListViewController" customModule="Umamee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgC-Ci-2s5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5d-b5-s1z">
+                                <rect key="frame" x="160.5" y="364" width="93" height="168"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-dL-eEd">
+                                <rect key="frame" x="5" y="792" width="404" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-qX-gfg" userLabel="browseRecipes">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="pBw-sx-koP"/>
+                                        </constraints>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="browseRecipesTapped:" destination="Tta-Ad-yHY" eventType="touchUpInside" id="rUq-mA-nMe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYN-KC-sgV" userLabel="myCookbook">
+                                        <rect key="frame" x="144.5" y="0.0" width="115" height="60"/>
+                                        <state key="normal" image="rectangle.fill.on.rectangle.angled.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="myCookbookTapped:" destination="Tta-Ad-yHY" eventType="touchUpInside" id="Hxn-YC-fb4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqL-dU-gai" userLabel="groceryList">
+                                        <rect key="frame" x="289.5" y="0.0" width="114.5" height="60"/>
+                                        <state key="normal" image="list.bullet" catalog="system"/>
+                                        <connections>
+                                            <action selector="groceryListTapped:" destination="Tta-Ad-yHY" eventType="touchUpInside" id="cGQ-Mc-wkD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LYN-KC-sgV" firstAttribute="height" secondItem="Ov6-qX-gfg" secondAttribute="height" id="P9W-Bl-3g3"/>
+                                    <constraint firstItem="qqL-dU-gai" firstAttribute="height" secondItem="Ov6-qX-gfg" secondAttribute="height" id="r78-qk-cZq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KDq-dL-eEd" firstAttribute="leading" secondItem="OtN-41-iu9" secondAttribute="leading" constant="5" id="1dR-e2-UHy"/>
+                            <constraint firstItem="OtN-41-iu9" firstAttribute="trailing" secondItem="KDq-dL-eEd" secondAttribute="trailing" constant="5" id="AKU-GJ-bL4"/>
+                            <constraint firstItem="KDq-dL-eEd" firstAttribute="top" secondItem="x5d-b5-s1z" secondAttribute="bottom" constant="260" id="bMW-yy-AKJ"/>
+                            <constraint firstItem="OtN-41-iu9" firstAttribute="bottom" secondItem="KDq-dL-eEd" secondAttribute="bottom" constant="10" id="cKo-60-kIK"/>
+                            <constraint firstItem="x5d-b5-s1z" firstAttribute="centerX" secondItem="cgC-Ci-2s5" secondAttribute="centerX" id="rF8-Ws-xBF"/>
+                            <constraint firstItem="x5d-b5-s1z" firstAttribute="centerY" secondItem="cgC-Ci-2s5" secondAttribute="centerY" id="wIa-jm-Ihn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OtN-41-iu9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ht7-ji-I8v"/>
+                    <connections>
+                        <outlet property="browseRecipes" destination="Ov6-qX-gfg" id="cWB-qz-Gu1"/>
+                        <outlet property="groceryList" destination="qqL-dU-gai" id="HlU-mr-OGD"/>
+                        <outlet property="myCookbook" destination="LYN-KC-sgV" id="n89-WI-VqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="109-Yc-YVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2868" y="865"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="53w-PI-gmz">
             <objects>
@@ -131,20 +201,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Umamee application" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-8k-OwN">
-                                <rect key="frame" x="129" y="437.5" width="156.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-8k-OwN">
+                                <rect key="frame" x="146.5" y="364" width="121.5" height="168"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-qq-bH6">
+                                <rect key="frame" x="5" y="792" width="404" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE3-fj-JX8" userLabel="browseRecipes">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="UJG-VX-HCR"/>
+                                        </constraints>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="browseRecipesTapped:" destination="sgO-Kq-ycH" eventType="touchUpInside" id="0yh-Us-kCG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTv-pj-QQl" userLabel="myCookbook">
+                                        <rect key="frame" x="144.5" y="0.0" width="115" height="60"/>
+                                        <state key="normal" image="rectangle.fill.on.rectangle.angled.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="myCookbookTapped:" destination="sgO-Kq-ycH" eventType="touchUpInside" id="nAw-IF-Mdu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG2-s6-XrH" userLabel="groceryList">
+                                        <rect key="frame" x="289.5" y="0.0" width="114.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" image="list.bullet" catalog="system"/>
+                                        <connections>
+                                            <action selector="groceryListTapped:" destination="sgO-Kq-ycH" eventType="touchUpInside" id="bpE-yL-IRQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="EG2-s6-XrH" firstAttribute="height" secondItem="bE3-fj-JX8" secondAttribute="height" id="MGJ-bS-q5q"/>
+                                    <constraint firstItem="eTv-pj-QQl" firstAttribute="height" secondItem="bE3-fj-JX8" secondAttribute="height" id="UEi-nz-hgf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="rDZ-ts-yQC" firstAttribute="trailing" secondItem="dJD-qq-bH6" secondAttribute="trailing" constant="5" id="2nu-D6-h3G"/>
                             <constraint firstItem="MGn-8k-OwN" firstAttribute="centerY" secondItem="EU3-Oq-GLK" secondAttribute="centerY" id="NIV-up-Ww0"/>
                             <constraint firstItem="MGn-8k-OwN" firstAttribute="centerX" secondItem="EU3-Oq-GLK" secondAttribute="centerX" id="S4X-3Y-LIG"/>
+                            <constraint firstItem="dJD-qq-bH6" firstAttribute="top" secondItem="MGn-8k-OwN" secondAttribute="bottom" constant="260" id="etV-ue-bhb"/>
+                            <constraint firstItem="rDZ-ts-yQC" firstAttribute="bottom" secondItem="dJD-qq-bH6" secondAttribute="bottom" constant="10" id="gO4-NI-ozQ"/>
+                            <constraint firstItem="dJD-qq-bH6" firstAttribute="leading" secondItem="rDZ-ts-yQC" secondAttribute="leading" constant="5" id="ynt-01-lZw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rDZ-ts-yQC"/>
                     </view>
+                    <connections>
+                        <outlet property="browseRecipes" destination="bE3-fj-JX8" id="eIK-f0-x90"/>
+                        <outlet property="groceryList" destination="EG2-s6-XrH" id="uzH-Lf-pXK"/>
+                        <outlet property="myCookbook" destination="EG2-s6-XrH" id="4WA-P0-gn4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3o-0M-2g7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,6 +342,76 @@
             </objects>
             <point key="canvasLocation" x="1942" y="-259"/>
         </scene>
+        <!--My Cookbook View Controller-->
+        <scene sceneID="OhH-Kk-gyg">
+            <objects>
+                <viewController storyboardIdentifier="CookbookVC" id="Zdj-Dd-IKZ" customClass="MyCookbookViewController" customModule="Umamee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fff-3X-28l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Cookbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR6-Ss-b7d">
+                                <rect key="frame" x="154" y="364" width="106" height="168"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iRY-z5-YHh">
+                                <rect key="frame" x="5" y="792" width="404" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh9-oh-zVm" userLabel="browseRecipes">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="avB-A1-GkN"/>
+                                        </constraints>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="browseRecipesTapped:" destination="Zdj-Dd-IKZ" eventType="touchUpInside" id="JQh-mk-VDm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15f-Od-IEw" userLabel="myCookbook">
+                                        <rect key="frame" x="144.5" y="0.0" width="115" height="60"/>
+                                        <state key="normal" image="rectangle.fill.on.rectangle.angled.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="myCookbookTapped:" destination="Zdj-Dd-IKZ" eventType="touchUpInside" id="aIc-da-pgW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-2O-Q0M" userLabel="groceryList">
+                                        <rect key="frame" x="289.5" y="0.0" width="114.5" height="60"/>
+                                        <state key="normal" image="list.bullet" catalog="system"/>
+                                        <connections>
+                                            <action selector="groceryListTapped:" destination="Zdj-Dd-IKZ" eventType="touchUpInside" id="ZHI-N3-3w8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="15f-Od-IEw" firstAttribute="height" secondItem="Uh9-oh-zVm" secondAttribute="height" id="WYI-ob-dlQ"/>
+                                    <constraint firstItem="RaO-2O-Q0M" firstAttribute="height" secondItem="Uh9-oh-zVm" secondAttribute="height" id="bc8-fB-PjQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="x7k-rs-g7y" firstAttribute="trailing" secondItem="iRY-z5-YHh" secondAttribute="trailing" constant="5" id="Cv4-Ge-W2s"/>
+                            <constraint firstItem="x7k-rs-g7y" firstAttribute="bottom" secondItem="iRY-z5-YHh" secondAttribute="bottom" constant="10" id="Ki6-IW-sq0"/>
+                            <constraint firstItem="hR6-Ss-b7d" firstAttribute="centerY" secondItem="fff-3X-28l" secondAttribute="centerY" id="Lmy-wi-Ykk"/>
+                            <constraint firstItem="iRY-z5-YHh" firstAttribute="leading" secondItem="x7k-rs-g7y" secondAttribute="leading" constant="5" id="aw0-5V-LFG"/>
+                            <constraint firstItem="iRY-z5-YHh" firstAttribute="top" secondItem="hR6-Ss-b7d" secondAttribute="bottom" constant="260" id="bTz-zI-JWI"/>
+                            <constraint firstItem="hR6-Ss-b7d" firstAttribute="centerX" secondItem="fff-3X-28l" secondAttribute="centerX" id="bWx-IA-hVj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x7k-rs-g7y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1p-F2-8HR"/>
+                    <connections>
+                        <outlet property="browseRecipes" destination="Uh9-oh-zVm" id="GBu-0D-S1N"/>
+                        <outlet property="groceryList" destination="RaO-2O-Q0M" id="XXV-K6-JHH"/>
+                        <outlet property="myCookbook" destination="15f-Od-IEw" id="Ug6-Zc-A92"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBp-Du-rDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2886" y="-592"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zFp-op-Q9H">
             <objects>
@@ -246,4 +430,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="rectangle.fill.on.rectangle.angled.fill" catalog="system" width="64" height="50"/>
+    </resources>
 </document>
