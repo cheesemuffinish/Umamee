@@ -134,12 +134,7 @@ class SignUpViewController: UIViewController {
                     self.transitiontoHome()
                     
                 }
-       
             }
-            
-   
-            
-            
         }
     }
     
